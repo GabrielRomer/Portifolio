@@ -1,45 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <title>Contato</title>
     <link rel="stylesheet" href="./styles/style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header class="Cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="certificados.html">Certificados</a>
-            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
-        </nav>
+      <nav class="navbar navbar-danger bg-danger cabecalho__menu">
+        <a
+          href="index.html"
+          class="btn btn-outline-danger cabecalho__menu__link"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="btn btn-outline-danger cabecalho__menu__link"
+          >Sobre mim</a
+        >
+        <a
+          href="certificados.html"
+          class="btn btn-outline-danger cabecalho__menu__link"
+          >Certificados</a
+        >
+        <a
+          href="contato.html"
+          class="btn btn-outline-danger cabecalho__menu__link"
+          >Contato</a
+        >
+      </nav>
     </header>
     <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo"><strong 
-            class="titulo-destaque2"> Contato 
-            </strong></h1>
-            <p class="apresentacao__conteudo__texto">Você pode me enviar uma mensagem!</p>
-            <p class="apresentacao__conteudo__texto">Preencha seu nome, seu e-mail e escreva a mensagem que deseja enviar para mim. </p>
-            
-            <form>
-                <label for = "nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" required><br><br>
+      <section class="apresentacao__conteudo">
+        <h1 class="apresentacao__conteudo__titulo">
+          <strong class="titulo-destaque2"> Contato </strong>
+        </h1>
+        <p class="apresentacao__conteudo__texto">
+          Você pode me enviar uma mensagem!
+        </p>
+        <p class="apresentacao__conteudo__texto">
+          Preencha seu nome, seu e-mail e escreva a mensagem que deseja enviar
+          para mim.
+        </p>
 
-                <label for = "email">E-mail:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for = "mensagem">Mensagem:</label><br>
-                <input type="mensagem" id="mensagem" name="mensagem" required></textarea><br><br>
+        <form>
+          <label for="nome">Nome:</label><br />
+          <input type="text" id="nome" name="nome" required /><br /><br />
 
-                <input id="btnEnviar" type="submit" value="Enviar">
+          <label for="email">E-mail:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensagem</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="10"
+            ></textarea>
+          </div>
 
-            </form>
-        </section>
-        <img class="apresentacao_imagem" src="assets/eu3.jpg" alt="Foto de gabriel "></main>
+          <input id="btnEnviar" type="submit" value="Enviar" />
+        </form>
+      </section>
+      <img src="./assets/eu3.jpg" class="img-fluid" alt="foto de gabriel " />
+    </main>
     <footer class="rodape">
-        <p>Desenvolvido por Gabriel Römer.</p>
+      <p>Desenvolvido por Gabriel Römer.</p>
     </footer>
-    
-</body>
+  </body>
 </html>
